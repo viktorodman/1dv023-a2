@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row"><h2>{{viewData.author}}'s Snippets</h2></div>
+  <div class="row">
+    {{#each viewData.mySnippets}}
+      <div class="col m4">
+        <div class="card sticky-action z-depth-5">
+          <div class="card-image">
+            <img src="/images/{{this.language}}.png">
+            <span class="card-title">{{this.title}}</span>
+          </div>
+
+          <div class="card-content">
+            <p>{{this.description}}</p>
+          </div>
+
+          <div class="card-action">
+            <input type="hidden">
+            <a href="/snippets/{{this.id}}">Show snippet</a>
+          </div>
+        </div>
+      </div>
+      {{else}}
+      <div class="card-panel noSnippet"><span>No Snippets found...</span></div>
+      {{/each}}
+    </div>
+  </div>

@@ -1,0 +1,19 @@
+<div class="container snippetContainer">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h3>{{viewData.title}}</h3>
+            <form action="/snippets/{{viewData.id}}/delete" method="post">
+                <p>Are you sure you want to delete: {{viewData.title}}?</p>
+                <input type="hidden" name="id" value="{{viewData.id}}">
+                <button class="btn-small red" type="submit">Delete</button>
+            </form>
+            <a class="btn-small" href="/snippets/{{viewData.id}}">Go back</a>
+        </div>
+    </div>
+    <div class="row">
+        <hr>    
+        <p class="flow-text">{{viewData.description}}</p>
+    </div>
+</div>

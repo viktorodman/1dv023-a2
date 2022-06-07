@@ -1,0 +1,161 @@
+body {
+    background-color: #AAAAAA;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+.nav-wrapper {
+    background-color: #111111;
+}
+
+.page-footer  {
+    background-color: #111111;
+
+}
+
+nav ul a {
+    background-color: #111111;
+    color: #AAAAAA;
+    font-size: 25px;
+}
+
+nav ul a:hover {
+    background-color: #393838;
+}
+
+.test {
+    /* background-color: #0074D9; */
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.loginbtn {
+    background-color: #111111; /* 127, 219, 255 */
+    color: #FFFFFF;
+}
+
+.loginbtn:hover {
+    background-color: #393838;
+}
+
+
+.login-title {
+    text-align: center;
+    color: #111111;
+}
+
+
+.login {
+    color: #111111;
+  }
+
+.card-panel {
+    text-align: center;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.danger {
+    background-color: red;
+    color: white;
+}
+
+.logout {
+    color: #AAAAAA;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 18px;
+    /* display: inline-block; */
+}
+
+.logout:hover {
+    background-color: #393838;
+    transition: background-color .3s ease;
+}
+
+.snippetWrapper {
+    background-color: grey;
+    height: -webkit-fill-available;
+    color: red;
+}
+
+.card-action {
+    -webkit-box-shadow: 0px -25px 5px -2px rgba(255,255,255,1);
+    -moz-box-shadow: 0px -25px 5px -2px rgba(255,255,255,1);
+    box-shadow: 0px -25px 5px -2px rgba(255, 255, 255, 0.68);
+}
+
+
+.card .card-image img {
+    background-color: rgb(130, 130, 130); 
+}
+
+.card .card-image .card-title {
+    font-size: 40px;
+    color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
+  
+}
+
+.card .card-content {
+    height: 110px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.noSnippet {
+    background-color: #AAAAAA;
+    color: #111111;
+}
+
+.snippetCreate {
+    background-color: #AAAAAA;
+    color: #111111;
+}
+
+textarea.snippetArea {
+    height: 400px;
+    color: #111111;   
+}
+
+textarea.snippetDescription {
+    height: 130px;
+}
+
+textarea.materialize-textarea {
+    min-height: unset;
+}
+
+.input-field label {
+    color: #111111;
+}
+
+.snippetContainer {
+    background-color: #DDDDDD;
+}
+
+.snippetText {
+    background-color: #DDDDDD;
+    
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: unset;
+    background: none;
+}
+
+label {
+    color: #111111;
+}
+

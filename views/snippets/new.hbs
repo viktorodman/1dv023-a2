@@ -1,0 +1,61 @@
+<div class="container snippetCreate">
+    <div class="row">
+        <h3>Create A snippet</h3>
+    </div>
+    <div class="row">
+        <form class="col s12" method="POST" action="/snippets/create">
+            <div class="row">
+                <span>Paste Code Here:</span>
+                <div class="input-field col s12 snippetText">
+                    <textarea id="snippet_str" class="materialize-textarea snippetArea" maxlength="1500" minlength="1" name="snippetstr" required></textarea>
+                    <label placeholder="Snippet Area" class="active" for="snippet_str">Snippet | Max 1500 characters</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Title for the snippet" id="snippet_title" type="text" class="validate" maxlength="50" minlength="1" name="title" required>
+                    <label class="active" for="snippet_title">Snippet Title | Max 50 characters</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea placeholder="Description" id="snippet_description" class="materialize-textarea snippetDescription" maxlength="500" minlength="1" name="description" required></textarea>
+                    <label class="active" for="snippet_description">Snippet Description | Max 500 characters</label>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                <label>
+                    <input class="with-gap" name="language" type="radio" required value="text"/>
+                    <span>TEXT</span>
+                </label>
+                </p>
+                <label>
+                    <input class="with-gap" name="language" type="radio" value="html"/>
+                    <span>HTML</span>
+                </label>
+
+                <p>
+                <label>
+                    <input class="with-gap" name="language" type="radio" value="javascript"/>
+                    <span>JavaScript</span>
+                </label>
+                </p>
+                
+                <p>
+                <label>
+                    <input class="with-gap" name="language" type="radio" value="java"/>
+                    <span>Java</span>
+                </label>
+                </p>
+            </div>
+            <div class="row">
+<button class="btn waves-effect waves-red valign-wrapper loginbtn" type="submit" name="action">Add Snippet</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+
+               
